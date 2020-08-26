@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-	int A[] = {10,20,30,40,50};     // Declaration and Initialization
+	int A[] = { 10, 20, 30, 40, 50};     // Declaration and Initialization
 	int i = 0, j = sizeof(A)/sizeof(int);           // Array Size/No of Element Calculation
 	int at=0, lookingFor, updateKth;          // at-> Index    lookingFor-> Element to be searched   updateKth-> Index
 	printf("Enter an index value where Insert/Delete operation is desired: ");
@@ -23,7 +23,7 @@ int main() {
 	int t1 = 70;      // Assumed a value 70 for insertion
 	int t2 = A[0];
 	for (i =0; i< j; i++) {
-		A[i]=t1;        // A[0] = 20; // Beginning of the array i.e. 0 index
+		A[i]=t1;        // A[0] = 70;     // Beginning of the array i.e. 0 index
 		t1 = t2;
 		if (i!= j-1)
 			t2 = A[i+1];
@@ -79,7 +79,6 @@ int main() {
 		printf("A[%d] = %d\t", i, A[i]);
 
 	/************* End of Deletion ************************/
-
 
 	/***************** Searching for an element in an Array **********************/
 	int flagToFoundCheck = 0;
