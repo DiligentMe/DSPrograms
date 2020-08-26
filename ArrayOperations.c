@@ -42,7 +42,7 @@ int main() {
 	t1 = 100;	     // Assumed a value 100 for insertion
 	t2 = A[at];
 	for (i =at; i< j; i++) {
-		A[i]=t1;        // A[at] = 50;    // At any given possible index
+		A[i]=t1;        // A[at] = 100;    // At any given possible index
 		t1 = t2;
 		if (i!= j-1)
 			t2 = A[i+1];
