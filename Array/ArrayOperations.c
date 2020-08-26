@@ -51,7 +51,7 @@ int main() {
 	printf("\nAfter Insertion at Index %d: \n",at);
 	for(i = 0; i<j; i++)
 		printf("A[%d] = %d\t", i, A[i]);
-	/************** End of Insertion ***********************/
+	/**************** End of Insertion ***********************/
 
 	/****************** Deletion an item from an Array *********************/
 	// From the beginning of the array i.e. 0 index
