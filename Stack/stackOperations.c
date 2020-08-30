@@ -18,7 +18,7 @@ int isFull(){
 // Push an item in the stack
 void push(int item){
   if(isFull() == 0){
-    printf("\nStack Overflow");
+    printf("\nStack is full(Stack Overflow)");
   }  else {
     top = top+1;
     stack[top]=item;
