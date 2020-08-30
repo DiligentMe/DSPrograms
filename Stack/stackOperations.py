@@ -1,7 +1,7 @@
 '''
 Stack Implementation
 '''
-stackSize = 10           # Define the size of the stack
+stackSize = 5           # Define the size of the stack
 stack = []               # Created empty stack
 top = -1                 # top initialized to -1
 
@@ -29,7 +29,7 @@ def pop():
         print("Stack is Empty (Stack Underflow)")
     else:
         print("Popped item is: ", stack[top])
-        stack.remove(top)
+        stack.pop(top)
         top = top - 1
 
 #Display the item at the peek of the stack i.e. last item inserted
@@ -52,8 +52,8 @@ def displayStack():
 #Main program begins from here
 print("*******************Demonstrating Stack************************")
 while True:
-    print("1 -> isEmpty()\t2 -> isFull()\t3 -> push()\n4 -> pop()\t5 -> peek()\t6 -> displayStack()")
-    choice = int(input("Enter your choice: "))
+    print("Chose your option:-\n1 -> isEmpty()\t2 -> isFull()\t3 -> push()\n4 -> pop()\t5 -> peek()\t6 -> displayStack()\n Any other integer to stop")
+    choice = int(input('Enter your choice: '))
     if choice == 1:
         if isEmpty() == 0:
             print("Stack is Empty (Stack Underflow)")
@@ -65,7 +65,7 @@ while True:
         else:
             print("Stack is not full")
     elif choice == 3:
-        data = int(input("Enter the value to push in stack: "))
+        data = int(input('Enter the value to push in stack: '))
         push(data)
     elif choice == 4:
         pop()
