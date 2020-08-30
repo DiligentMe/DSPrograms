@@ -95,7 +95,7 @@ int main(){
             displayStack();
             break;
     }
-    printf("\nDo you want to continue demonstration (Enter y/Y for yes): ");
+    printf("\nDo you want to continue demonstration (Enter y/Y for yes ): ");
     more=getch();
   }
   return 0;
